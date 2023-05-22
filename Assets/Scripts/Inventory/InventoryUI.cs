@@ -12,12 +12,20 @@ public class InventoryUI : MonoBehaviour
     private InventorySlot[] slots;
 
     // Start is called before the first frame update
-    void Start()
+    void Start() //Start()
     {
         inventory = Inventory.instance;
+        inventory.inventoryUI = this.gameObject;
         inventory.inventoryChange += UpdateUI;
         inventory.inventoryChange += UpdateGold;
-        
+        inventory.inventoryChange.Invoke();
+        inventory.ToggleInventory(false);
+        inventory.FilterList("All");
+    }
+    private void OnDestroy()
+    {
+        inventory.inventoryChange -= UpdateUI;
+        inventory.inventoryChange -= UpdateGold;
     }
     private void OnEnable()
     {
@@ -34,11 +42,10 @@ public class InventoryUI : MonoBehaviour
     {
         for (int i = 0; i < slots.Length; i++)
         {
-            Debug.Log("Entre");
             if (inventory.ShowedItems != null && i < inventory.ShowedItems.Count)
             {
                 slots[i].AddItem(inventory.ShowedItems[i]);
-                Debug.Log("se agrega item");
+                Debug.Log("Item added");
             }
             else
             {

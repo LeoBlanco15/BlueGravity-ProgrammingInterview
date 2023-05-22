@@ -7,10 +7,17 @@ public class InventorySlot : MonoBehaviour
 {
     public Image icon;
     public GameObject cost;
-    public Text costText;
+    public Text costText; 
 
     private Item item;
 
+    public bool ItemEquiped
+    {
+        get
+        {
+            return item.Equiped;
+        }
+    }
     public void AddItem(Item addItem)
     {
         item = addItem;
@@ -43,9 +50,16 @@ public class InventorySlot : MonoBehaviour
         if(item != null)
             item.Use();
     }
-    public void BuyItem()
+    public void BuyItem(bool equip)
     {
         if (item != null)
+        {
             ShopUI.instance.interactShop.Buy(item);
+            if (equip) MainCharacterChothes.instance.ChangeItem(Inventory.instance.itemList[Inventory.instance.itemList.Count-1], true);
+        }
+    }
+    public void PreviewItem()
+    {
+        PreviewUI.instance.PreviewArmon(item);
     }
 }

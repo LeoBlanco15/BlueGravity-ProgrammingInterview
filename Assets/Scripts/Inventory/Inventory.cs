@@ -38,9 +38,16 @@ public class Inventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ToggleInventory(false);
         gold = 100;
+        ToggleInventory(false);
+        //FilterList("All");
+    }
+    private void OnLevelWasLoaded(int level)
+    {
+        ToggleInventory(false);
         FilterList("All");
+        //inventoryUI = FindObjectOfType<InventoryUI>().gameObject;
+        //ToggleInventory(false);
     }
 
     private void Update()
@@ -60,7 +67,6 @@ public class Inventory : MonoBehaviour
     /// <param name="item"></param>
     public void AddItem(Item item)
     {
-        //itemList.Add(item);
         switch (item.type)
         {
             case ItemSlot.Hood:
@@ -111,7 +117,8 @@ public class Inventory : MonoBehaviour
         {
         showedItems = Filter(itemSlot);
         }
-        inventoryChange.Invoke();
+        if(inventoryChange != null)
+            inventoryChange.Invoke();
     }
     private List<Item> Filter(string itemSlot)
     {
@@ -173,6 +180,7 @@ public class Inventory : MonoBehaviour
     public void ToggleInventory(bool toggle)
     {
         InputManager.isPaused = toggle;
+        if (!inventoryUI) return;
         inventoryUI.SetActive(toggle);
     }
     public void UnEquipAll(ItemSlot itemSlot)

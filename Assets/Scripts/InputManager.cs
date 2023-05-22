@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public static class InputManager
 {
@@ -22,5 +23,17 @@ public static class InputManager
     public static bool GetInventory()
     {
         return Input.GetButtonDown("Open inventory");
+    }
+    public static void LoadScene(string sceneName)
+    {
+        if (CheckScene("Main scene"))
+        {
+            Manager.instance.LastLocationCharacter = MainCharacterChothes.instance.transform.position;
+        }
+        SceneManager.LoadScene(sceneName);
+    }
+    public static bool CheckScene(string sceneName)
+    {
+        return SceneManager.GetActiveScene().name == sceneName;
     }
 }

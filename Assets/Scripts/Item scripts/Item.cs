@@ -28,7 +28,7 @@ public class Item : ScriptableObject
         else
         {
             Debug.Log("Using item");
-            MainCharacterChothes.instance.ChangeItem(this);
+            MainCharacterChothes.instance.ChangeItem(this, true);
         }
     }
 }

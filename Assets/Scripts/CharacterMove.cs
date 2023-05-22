@@ -25,9 +25,9 @@ public class CharacterMove : MonoBehaviour
     {
         if (!InputManager.isPaused)
         {
-        //player input goes here
-        movement.x = InputManager.GetHorizontal();
-        movement.y = InputManager.GetVertical();
+            //player input goes here
+            movement.x = InputManager.GetHorizontal();
+            movement.y = InputManager.GetVertical();
 
         }
         else
@@ -35,6 +35,7 @@ public class CharacterMove : MonoBehaviour
             movement.x = 0;
             movement.y = 0;
         }
+        //Debug.Log(InputManager.isPaused);
         Animate();
     }
     private void FixedUpdate()

@@ -22,6 +22,14 @@ public class Shop : MonoBehaviour
     }
     private void Start()
     {
+        if (itemsOnSale.Count <= 0)
+        {
+            itemsOnSale = Manager.instance.LoadedItems;
+            ShopUI.instance.SetUpShop();
+        }
+
+        InputManager.shopOpened = InputManager.CheckScene("Shop scene");
+
         foreach (Item item in itemsOnSale)
         {
             item.Equiped = false;
@@ -39,6 +47,7 @@ public class Shop : MonoBehaviour
         {
             Interact(false);
         }
+        //Debug.Log(isInside);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -47,8 +56,9 @@ public class Shop : MonoBehaviour
         {
             isInside = true;
         }
-        ShopUI.instance.interactShop = this;
-        ShopUI.instance.SetUpShop();
+        Manager.instance.LoadedItems = this.ShowedItems;
+        //ShopUI.instance.interactShop = this;
+        //ShopUI.instance.SetUpShop();
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -56,17 +66,19 @@ public class Shop : MonoBehaviour
         {
             isInside = false;
         }
-        ShopUI.instance.interactShop = null;
+        //ShopUI.instance.interactShop = null;
         shop.SetActive(false);
         Inventory.instance.ToggleInventory(false);
+        Manager.instance.LoadedItems = null;
     }
     public void Interact(bool toggle)
     {
         Debug.Log("Interacted");
-        shop.SetActive(toggle);
-        InputManager.shopOpened = toggle;
-        //ShopUI.instance.shopOpen = toggle;
-        Inventory.instance.ToggleInventory(toggle);
+        //shop.SetActive(toggle);
+        //InputManager.shopOpened = toggle;
+        InputManager.LoadScene("Shop scene");
+        ////ShopUI.instance.shopOpen = toggle;
+        //Inventory.instance.ToggleInventory(toggle);
     }
     public void Buy(Item item)
     {
