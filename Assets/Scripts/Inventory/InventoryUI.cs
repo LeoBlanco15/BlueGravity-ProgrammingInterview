@@ -53,4 +53,8 @@ public class InventoryUI : MonoBehaviour
             }
         }
     }
+    public void FilterListCall(string filter)
+    {
+        inventory.FilterList(filter);
+    }
 }

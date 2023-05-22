@@ -8834,6 +8834,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8898220986075330461, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8898220985930314940}
+    - target: {fileID: 8898220986075330461, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FilterListCall
+      objectReference: {fileID: 0}
+    - target: {fileID: 8898220986075330461, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InventoryUI, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 8898220986146403420, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
       propertyPath: m_FontData.m_MinSize
       value: 1
@@ -8885,6 +8897,18 @@ PrefabInstance:
     - target: {fileID: 8898220986234016858, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8898220986251322694, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8898220985930314940}
+    - target: {fileID: 8898220986251322694, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FilterListCall
+      objectReference: {fileID: 0}
+    - target: {fileID: 8898220986251322694, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InventoryUI, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8898220986251322695, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
       propertyPath: m_AnchorMax.x
@@ -8949,6 +8973,18 @@ PrefabInstance:
     - target: {fileID: 8898220986775613730, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8898220986822392516, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8898220985930314940}
+    - target: {fileID: 8898220986822392516, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FilterListCall
+      objectReference: {fileID: 0}
+    - target: {fileID: 8898220986822392516, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InventoryUI, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8898220986822392517, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
       propertyPath: m_AnchorMax.x
@@ -9110,6 +9146,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8898220987381348869, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8898220985930314940}
+    - target: {fileID: 8898220987381348869, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FilterListCall
+      objectReference: {fileID: 0}
+    - target: {fileID: 8898220987381348869, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InventoryUI, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 8898220987432452949, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
       propertyPath: m_FontData.m_MinSize
       value: 1
@@ -9117,6 +9165,18 @@ PrefabInstance:
     - target: {fileID: 8898220987432452949, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8898220987458924166, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8898220985930314940}
+    - target: {fileID: 8898220987458924166, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FilterListCall
+      objectReference: {fileID: 0}
+    - target: {fileID: 8898220987458924166, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InventoryUI, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8898220987458924167, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
       propertyPath: m_AnchorMax.x
@@ -9245,3 +9305,14 @@ MonoBehaviour:
   m_Spacing: {x: 45, y: 0}
   m_Constraint: 2
   m_ConstraintCount: 1
+--- !u!114 &8898220985930314940 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8898220987239058783, guid: 385dd8b2791bf874cacd304b57b38950, type: 3}
+  m_PrefabInstance: {fileID: 8898220985930314937}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375877603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71c44f5a3d5c2514d914a814384d847b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

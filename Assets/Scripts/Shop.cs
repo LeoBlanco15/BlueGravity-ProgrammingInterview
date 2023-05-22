@@ -22,6 +22,7 @@ public class Shop : MonoBehaviour
     }
     private void Start()
     {
+        showedItems = itemsOnSale;
         if (itemsOnSale.Count <= 0)
         {
             itemsOnSale = Manager.instance.LoadedItems;

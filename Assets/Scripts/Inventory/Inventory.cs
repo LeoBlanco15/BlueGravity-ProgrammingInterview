@@ -100,13 +100,9 @@ public class Inventory : MonoBehaviour
             default:
                 break;
         }
-        inventoryChange.Invoke();
+        if(inventoryChange != null)
+            inventoryChange.Invoke();
     }
-    //public void FilterList()
-    //{
-    //    showedItems = itemList;
-    //    inventoryChange.Invoke();
-    //}
     public void FilterList(string itemSlot)
     {
         if (itemSlot == "All")
