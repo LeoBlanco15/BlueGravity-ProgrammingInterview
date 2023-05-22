@@ -16,11 +16,6 @@ public class ShopUI : MonoBehaviour
     public Shop interactShop;
 
     private InventorySlot[] slots;
-    // Start is called before the first frame update
-    void Start()
-    {
-        //slots = itemParents.GetComponentsInChildren<InventorySlot>();
-    }
     public void SetUpShop()
     {
         interactShop.shopUpdate += UpdateShop;
@@ -32,9 +27,9 @@ public class ShopUI : MonoBehaviour
     {
         for (int i = 0; i < slots.Length; i++)
         {
-            if (i < interactShop.ShowedItems.Count) //interactShop.ShowedItems.Count
+            if (i < interactShop.ShowedItems.Count)
             {
-                slots[i].AddItem(interactShop.ShowedItems[i]); //interactShop.ShowedItems[i]
+                slots[i].AddItem(interactShop.ShowedItems[i]);
             }
             else
             {

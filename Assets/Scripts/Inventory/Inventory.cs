@@ -40,14 +40,11 @@ public class Inventory : MonoBehaviour
     {
         gold = 100;
         ToggleInventory(false);
-        //FilterList("All");
     }
     private void OnLevelWasLoaded(int level)
     {
         ToggleInventory(false);
         FilterList("All");
-        //inventoryUI = FindObjectOfType<InventoryUI>().gameObject;
-        //ToggleInventory(false);
     }
 
     private void Update()

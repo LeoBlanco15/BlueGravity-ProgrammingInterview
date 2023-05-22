@@ -48,7 +48,6 @@ public class Shop : MonoBehaviour
         {
             Interact(false);
         }
-        //Debug.Log(isInside);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -58,8 +57,6 @@ public class Shop : MonoBehaviour
             isInside = true;
         }
         Manager.instance.LoadedItems = this.ShowedItems;
-        //ShopUI.instance.interactShop = this;
-        //ShopUI.instance.SetUpShop();
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -67,7 +64,6 @@ public class Shop : MonoBehaviour
         {
             isInside = false;
         }
-        //ShopUI.instance.interactShop = null;
         shop.SetActive(false);
         Inventory.instance.ToggleInventory(false);
         Manager.instance.LoadedItems = null;
@@ -75,11 +71,7 @@ public class Shop : MonoBehaviour
     public void Interact(bool toggle)
     {
         Debug.Log("Interacted");
-        //shop.SetActive(toggle);
-        //InputManager.shopOpened = toggle;
         InputManager.LoadScene("Shop scene");
-        ////ShopUI.instance.shopOpen = toggle;
-        //Inventory.instance.ToggleInventory(toggle);
     }
     public void Buy(Item item)
     {

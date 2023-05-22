@@ -12,7 +12,7 @@ public class InventoryUI : MonoBehaviour
     private InventorySlot[] slots;
 
     // Start is called before the first frame update
-    void Start() //Start()
+    void Start()
     {
         inventory = Inventory.instance;
         inventory.inventoryUI = this.gameObject;
